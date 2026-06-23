@@ -1,0 +1,46 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html><head><meta charset="utf-8"/>
+<title>Header usage</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  body { margin: 0; padding: 24px; background: #fff; font-family: "Archivo", sans-serif; color: #0A0E10; }
+  h2 { font-family: "Archivo Black", sans-serif; font-weight: 400; font-size: 14px; letter-spacing: -0.015em; margin: 0 0 14px; }
+  .stack { display: grid; gap: 10px; }
+  .hdr { border-radius: 12px; padding: 14px 22px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .hdr.light { background: #F2F0E8; border: 1px solid rgba(0,0,0,0.08); }
+  .hdr.dark { background: #0A0E10; }
+  .hdr.loud { background: #E0FF4F; }
+  .nav { display: flex; gap: 18px; font-size: 12px; align-items: center; font-weight: 500; }
+  .light .nav { color: rgba(10,14,16,0.65); }
+  .dark .nav { color: rgba(255,255,255,0.72); }
+  .loud .nav { color: rgba(10,14,16,0.85); }
+  .cta { padding: 7px 14px; border-radius: 999px; font-weight: 700; font-size: 12px; white-space: nowrap; }
+  .light .cta { background: #0A0E10; color: #F2F0E8; }
+  .dark .cta  { background: #E0FF4F; color: #0A0E10; }
+  .loud .cta  { background: #0A0E10; color: #F2F0E8; }
+
+  .bb { display: inline-flex; align-items: baseline; line-height: 1; }
+  .wm { font-family: "Archivo Black", sans-serif; font-weight: 400; font-size: 24px; line-height: 1; letter-spacing: -0.7px; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; margin-left: 1px; transform: translateY(1px); display: inline-block; }
+  .light .wm { color: #0A0E10; } .light .dot { background: #E0FF4F; }
+  .dark .wm  { color: #F2F0E8; } .dark .dot  { background: #FF3D8B; }
+  .loud .wm  { color: #0A0E10; } .loud .dot  { background: #FF3D8B; }
+</style></head>
+<body>
+  <h2>Header in context — light · dark · loud</h2>
+  <div class="stack">
+    <div class="hdr light">
+      <span class="bb"><span class="wm">Bebop</span><span class="dot"></span></span>
+      <div class="nav"><span>Approach</span><span>Work</span><span>Insights</span><span class="cta">Book a call</span></div>
+    </div>
+    <div class="hdr dark">
+      <span class="bb"><span class="wm">Bebop</span><span class="dot"></span></span>
+      <div class="nav"><span>Approach</span><span>Work</span><span>Insights</span><span class="cta">Book a call</span></div>
+    </div>
+    <div class="hdr loud">
+      <span class="bb"><span class="wm">Bebop</span><span class="dot"></span></span>
+      <div class="nav"><span>Approach</span><span>Work</span><span>Insights</span><span class="cta">Book a call</span></div>
+    </div>
+  </div>
+</body></html>

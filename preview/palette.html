@@ -1,0 +1,27 @@
+<!-- @dsCard group="Colors" -->
+<!doctype html>
+<html><head><meta charset="utf-8"/>
+<title>Palette</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+<style>
+  body { margin: 0; padding: 24px; background: #fff; font-family: "Archivo", sans-serif; color: #0A0E10; }
+  h2 { font-family: "Archivo Black", sans-serif; font-weight: 400; font-size: 14px; letter-spacing: -0.015em; margin: 0 0 14px; }
+  .row { display: grid; grid-template-columns: repeat(5, 1fr); border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); }
+  .sw { padding: 18px 16px 18px; min-height: 130px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid rgba(0,0,0,0.06); }
+  .sw:last-child { border-right: 0; }
+  .role { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; }
+  .name { font-family: "Archivo Black", sans-serif; font-weight: 400; font-size: 18px; letter-spacing: -0.02em; line-height: 1; }
+  .hex { font-family: "JetBrains Mono", monospace; font-weight: 500; font-size: 11px; }
+  .d { color: #F2F0E8; } .d .role { color: rgba(255,255,255,0.6); }
+  .l { color: #0A0E10; } .l .role { color: rgba(0,0,0,0.5); }
+</style></head>
+<body>
+  <h2>Bebop palette — Lime is the identity · Magenta is the pop</h2>
+  <div class="row">
+    <div class="sw d" style="background:#0A0E10"><div><div class="role">Primary</div></div><div class="name">Ink Black</div><div class="hex">#0A0E10</div></div>
+    <div class="sw l" style="background:#E0FF4F"><div><div class="role">Accent · Identity</div></div><div class="name">Neon Lime</div><div class="hex">#E0FF4F</div></div>
+    <div class="sw l" style="background:#FF3D8B"><div><div class="role">Pop · Dark only</div></div><div class="name">Hot Magenta</div><div class="hex">#FF3D8B</div></div>
+    <div class="sw l" style="background:#F2F0E8"><div><div class="role">Base · Surface</div></div><div class="name">Paper</div><div class="hex">#F2F0E8</div></div>
+    <div class="sw d" style="background:#2A2E30"><div><div class="role">Neutral</div></div><div class="name">Stone</div><div class="hex">#2A2E30</div></div>
+  </div>
+</body></html>

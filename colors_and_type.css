@@ -1,0 +1,277 @@
+/* ============================================================
+   Bebop · Design tokens
+   Brand Identity · Logo Pack v1.0 · Hebrew via Tel Aviv family
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+Hebrew:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* ----- Local brand fonts ----- */
+
+/* Polin — the body face. Hebrew + Latin, 5 weights. */
+@font-face {
+  font-family: "Polin";
+  src: url("fonts/Polin-Light.woff2") format("woff2"),
+       url("fonts/Polin-Light.woff") format("woff"),
+       url("fonts/Polin-Light.ttf") format("truetype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Polin";
+  src: url("fonts/Polin-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Polin";
+  src: url("fonts/Polin-Medium.woff2") format("woff2"),
+       url("fonts/Polin-Medium.woff") format("woff"),
+       url("fonts/Polin-Medium.ttf") format("truetype");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Polin";
+  src: url("fonts/Polin-Semibold.woff2") format("woff2"),
+       url("fonts/Polin-Semibold.woff") format("woff"),
+       url("fonts/Polin-Semibold.ttf") format("truetype");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Polin";
+  src: url("fonts/Polin-Bold.woff2") format("woff2"),
+       url("fonts/Polin-Bold.woff") format("woff"),
+       url("fonts/Polin-Bold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Polin";
+  src: url("fonts/Polin-Black.woff2") format("woff2"),
+       url("fonts/Polin-Black.woff") format("woff"),
+       url("fonts/Polin-Black.ttf") format("truetype");
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+
+/* Tel Aviv · Modernist — secondary body / alt voice */
+@font-face {
+  font-family: "TelAviv Modernist";
+  src: url("fonts/TelAviv-ModernistRegular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TelAviv Modernist";
+  src: url("fonts/TelAviv-ModernistBold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* Tel Aviv · Brutalist — secondary / accent type */
+@font-face {
+  font-family: "TelAviv Brutalist";
+  src: url("fonts/TelAviv-BrutalistLight.ttf") format("truetype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TelAviv Brutalist";
+  src: url("fonts/TelAviv-BrutalistRegular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TelAviv Brutalist";
+  src: url("fonts/TelAviv-BrutalistBold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* Tel Aviv · Eclectic Hebrew — Hebrew display / headlines */
+@font-face {
+  font-family: "TelAviv Eclectic Hebrew";
+  src: url("fonts/TelAviv-EclecticHebrewNo1.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TelAviv Eclectic Hebrew No2";
+  src: url("fonts/TelAviv-EclecticHebrewNo2.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
+/* Tel Aviv · Eclectic Latin — Latin display companion */
+@font-face {
+  font-family: "TelAviv Eclectic Latin";
+  src: url("fonts/TelAviv-EclecticLatinNo1.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TelAviv Eclectic Latin No2";
+  src: url("fonts/TelAviv-EclecticLatinNo2.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
+/* Tel Aviv · Eclectic Arabic — Arabic display (kept for future) */
+@font-face {
+  font-family: "TelAviv Eclectic Arabic";
+  src: url("fonts/TelAviv-EclecticArabicNo1.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TelAviv Eclectic Arabic No2";
+  src: url("fonts/TelAviv-EclecticArabicNo2.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
+:root {
+  /* ---- core palette (locked) ---- */
+  --bb-ink:      #0A0E10;     /* Primary · Text */
+  --bb-lime:     #E0FF4F;     /* Accent · Identity (always) */
+  --bb-magenta:  #FF3D8B;     /* Pop · Dark contexts only */
+  --bb-paper:    #F2F0E8;     /* Base · Surface */
+  --bb-stone:    #2A2E30;     /* Neutral · Secondary */
+
+  /* ---- semantic aliases ---- */
+  --bb-primary:    var(--bb-ink);
+  --bb-accent:     var(--bb-lime);
+  --bb-pop:        var(--bb-magenta);
+  --bb-bg:         var(--bb-paper);
+  --bb-neutral:    var(--bb-stone);
+
+  /* ---- text on backgrounds ---- */
+  --bb-fg-1:  var(--bb-ink);
+  --bb-fg-2:  rgba(10, 14, 16, 0.65);
+  --bb-fg-3:  rgba(10, 14, 16, 0.45);
+  --bb-fg-4:  rgba(10, 14, 16, 0.28);
+
+  --bb-on-dark-1: var(--bb-paper);
+  --bb-on-dark-2: rgba(255,255,255,0.72);
+  --bb-on-dark-3: rgba(255,255,255,0.48);
+
+  /* ---- rules + edges ---- */
+  --bb-rule:        rgba(10, 14, 16, 0.10);
+  --bb-rule-strong: rgba(10, 14, 16, 0.18);
+
+  /* ---- states ---- */
+  --bb-success: #4FB287;
+  --bb-warn:    #E2A33C;
+  --bb-error:   #D85146;
+  --bb-info:    var(--bb-lime);
+
+  /* ---- radii ---- */
+  --bb-radius-xs:   4px;
+  --bb-radius-sm:   8px;
+  --bb-radius-md:  12px;
+  --bb-radius-lg:  18px;
+  --bb-radius-xl:  26px;
+  --bb-radius-pill: 999px;
+
+  /* ---- spacing (4px base) ---- */
+  --bb-s-1: 4px;  --bb-s-2: 8px;  --bb-s-3: 12px; --bb-s-4: 16px;
+  --bb-s-5: 24px; --bb-s-6: 32px; --bb-s-7: 48px; --bb-s-8: 64px;
+  --bb-s-9: 96px; --bb-s-10: 128px;
+
+  /* ---- shadows ---- */
+  --bb-shadow-1: 0 1px 2px  rgba(10, 14, 16, 0.05), 0 1px 1px rgba(10, 14, 16, 0.04);
+  --bb-shadow-2: 0 4px 14px rgba(10, 14, 16, 0.07), 0 1px 2px rgba(10, 14, 16, 0.05);
+  --bb-shadow-3: 0 16px 40px rgba(10, 14, 16, 0.10), 0 2px 6px rgba(10, 14, 16, 0.05);
+
+  /* ---- motion ---- */
+  --bb-ease-out:    cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --bb-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --bb-dur-fast: 140ms; /* @kind other */
+  --bb-dur-base: 220ms; /* @kind other */
+  --bb-dur-slow: 420ms; /* @kind other */
+
+  /* ---- type stack ----
+     Wordmark        = Archivo Black (English forever)
+     Hero / display  = Polin Black (900)               — Hebrew + Latin
+     Subheads        = Polin Medium / Semibold (500/600)
+     Body long-form  = Noto Sans Hebrew (400/500/700)  — reads beautifully at every size
+     Secondary       = Tel Aviv Brutalist (400/700)    — labels, meta, data
+     Poster only     = Tel Aviv Eclectic Hebrew        — nothing else
+     Mono            = JetBrains Mono                  — hex, URLs, code */
+  --bb-font-wordmark:       "Archivo Black", "Arial Black", sans-serif;
+  --bb-font-hero:           "Polin", "Noto Sans Hebrew", -apple-system, system-ui, sans-serif;
+  --bb-font-subhead:        "Polin", "Noto Sans Hebrew", -apple-system, system-ui, sans-serif;
+  --bb-font-body:           "Noto Sans Hebrew", "Polin", -apple-system, system-ui, sans-serif;
+  --bb-font-text:           "Noto Sans Hebrew", "Polin", -apple-system, system-ui, sans-serif;
+  --bb-font-secondary:      "TelAviv Brutalist", "Polin", "Noto Sans Hebrew", sans-serif;
+  --bb-font-poster:         "TelAviv Eclectic Hebrew", "Polin", sans-serif;
+  --bb-font-mono:           "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* legacy aliases (don't break existing pages) */
+  --bb-font-display:        var(--bb-font-hero);
+  --bb-font-display-hebrew: var(--bb-font-hero);
+  --bb-font-display-latin:  var(--bb-font-hero);
+  --bb-font-hebrew:         var(--bb-font-hero);
+
+  /* legacy aliases (don't break existing pages) */
+  --bb-font-display:         var(--bb-font-display-latin);
+  --bb-font-hebrew:          var(--bb-font-display-hebrew);
+}
+
+/* ----------------------------------------------------------------
+   Latin display type scale — for English moments
+   ---------------------------------------------------------------- */
+.bb-display-1 {
+  font-family: var(--bb-font-hero); font-weight: 900;
+  font-size: clamp(56px, 7vw, 96px); line-height: 1;
+  letter-spacing: -0.02em; color: var(--bb-fg-1);
+}
+.bb-display-2 {
+  font-family: var(--bb-font-hero); font-weight: 900;
+  font-size: clamp(40px, 5vw, 64px); line-height: 1.02;
+  letter-spacing: -0.018em; color: var(--bb-fg-1);
+}
+.bb-h1 { font-family: var(--bb-font-subhead); font-weight: 500; font-size: 44px; line-height: 1.1;  letter-spacing: -0.012em; color: var(--bb-fg-1); }
+.bb-h2 { font-family: var(--bb-font-subhead); font-weight: 500; font-size: 32px; line-height: 1.15; letter-spacing: -0.01em;  color: var(--bb-fg-1); }
+.bb-h3 { font-family: var(--bb-font-subhead); font-weight: 600; font-size: 22px; line-height: 1.2;  letter-spacing: -0.008em; color: var(--bb-fg-1); }
+.bb-h4 { font-family: var(--bb-font-subhead); font-weight: 700; font-size: 17px; line-height: 1.3;  letter-spacing: -0.005em; color: var(--bb-fg-1); }
+
+.bb-body    { font-family: var(--bb-font-body); font-weight: 400; font-size: 16px; line-height: 1.65; color: var(--bb-fg-2); }
+.bb-body-sm { font-family: var(--bb-font-body); font-weight: 400; font-size: 14px; line-height: 1.65; color: var(--bb-fg-2); }
+.bb-meta    { font-family: var(--bb-font-secondary); font-weight: 400; font-size: 12px; line-height: 1.4;  color: var(--bb-fg-3); }
+.bb-eyebrow { font-family: var(--bb-font-secondary); font-weight: 700; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--bb-fg-3); }
+.bb-code    { font-family: var(--bb-font-mono); font-weight: 500; font-size: 13px; line-height: 1.5;  color: var(--bb-fg-1); }
+
+/* ----------------------------------------------------------------
+   Hebrew type scale — PRIMARY LANGUAGE, RTL by default.
+   Pair with `dir="rtl"` on the container.
+   COMBO 2: Polin Black hero → Polin Medium subhead → Noto body.
+   ---------------------------------------------------------------- */
+.bb-he-display-1 { font-family: var(--bb-font-hero); font-weight: 900; font-size: clamp(56px, 7vw, 96px); line-height: 1.02; letter-spacing: -0.02em;  color: var(--bb-fg-1); }
+.bb-he-display-2 { font-family: var(--bb-font-hero); font-weight: 900; font-size: clamp(40px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.018em; color: var(--bb-fg-1); }
+.bb-he-h1   { font-family: var(--bb-font-subhead); font-weight: 500; font-size: 44px; line-height: 1.15; letter-spacing: -0.012em; color: var(--bb-fg-1); }
+.bb-he-h2   { font-family: var(--bb-font-subhead); font-weight: 500; font-size: 32px; line-height: 1.2;  letter-spacing: -0.01em;  color: var(--bb-fg-1); }
+.bb-he-h3   { font-family: var(--bb-font-subhead); font-weight: 600; font-size: 22px; line-height: 1.25; letter-spacing: -0.008em; color: var(--bb-fg-1); }
+.bb-he-body    { font-family: var(--bb-font-body); font-weight: 400; font-size: 16px; line-height: 1.7; color: var(--bb-fg-2); }
+.bb-he-body-sm { font-family: var(--bb-font-body); font-weight: 400; font-size: 14px; line-height: 1.7; color: var(--bb-fg-2); }
+.bb-he-meta    { font-family: var(--bb-font-secondary); font-weight: 400; font-size: 12px; line-height: 1.5;  color: var(--bb-fg-3); }
+.bb-he-eyebrow { font-family: var(--bb-font-secondary); font-weight: 700; font-size: 12px; letter-spacing: 0.10em; color: var(--bb-fg-3); }
+
+/* ----------------------------------------------------------------
+   The wordmark — Archivo Black, CSS-only, English forever.
+   ---------------------------------------------------------------- */
+.bb-wordmark {
+  --u: 1; /* @kind other */
+  --wm-ink:    var(--bb-ink);
+  --wm-accent: var(--bb-lime);
+  display: inline-flex;
+  align-items: baseline;
+  line-height: 1;
+  vertical-align: top;
+}
+.bb-wordmark .wm {
+  font-family: var(--bb-font-wordmark);
+  font-weight: 400;
+  font-size: calc(280px * var(--u));
+  line-height: 1;
+  letter-spacing: calc(-8px * var(--u));
+  color: var(--wm-ink);
+  display: inline-block;
+}
+.bb-wordmark .dot {
+  width:  calc(64px * var(--u));
+  height: calc(64px * var(--u));
+  border-radius: 50%;
+  background: var(--wm-accent);
+  display: inline-block;
+  margin-left: calc(8px * var(--u));
+  transform: translateY(calc(8px * var(--u)));
+}
+.bb-wordmark.reversed { --wm-ink: var(--bb-paper); --wm-accent: var(--bb-magenta); }
+.bb-wordmark.loud     { --wm-ink: var(--bb-ink);   --wm-accent: var(--bb-magenta); }
+.bb-wordmark.mono     { --wm-ink: #000; --wm-accent: #000; }
+.bb-wordmark.mono-inv { --wm-ink: #fff; --wm-accent: #fff; }

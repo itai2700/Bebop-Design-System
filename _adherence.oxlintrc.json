@@ -1,0 +1,190 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": []
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Polin|TelAviv Modernist|TelAviv Brutalist|TelAviv Eclectic Hebrew|TelAviv Eclectic Hebrew No2|TelAviv Eclectic Latin|TelAviv Eclectic Latin No2|TelAviv Eclectic Arabic|TelAviv Eclectic Arabic No2|Archivo Black|Noto Sans Hebrew|JetBrains Mono))/i]",
+        "message": "Font not provided by the design system. Available: Polin, TelAviv Modernist, TelAviv Brutalist, TelAviv Eclectic Hebrew, TelAviv Eclectic Hebrew No2, TelAviv Eclectic Latin, TelAviv Eclectic Latin No2, TelAviv Eclectic Arabic, TelAviv Eclectic Arabic No2, Archivo Black, Noto Sans Hebrew, JetBrains Mono."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {},
+    "tokens": [
+      "--bb-accent",
+      "--bb-bg",
+      "--bb-dur-base",
+      "--bb-dur-fast",
+      "--bb-dur-slow",
+      "--bb-ease-in-out",
+      "--bb-ease-out",
+      "--bb-error",
+      "--bb-fg-1",
+      "--bb-fg-2",
+      "--bb-fg-3",
+      "--bb-fg-4",
+      "--bb-font-body",
+      "--bb-font-display",
+      "--bb-font-display-hebrew",
+      "--bb-font-display-latin",
+      "--bb-font-hebrew",
+      "--bb-font-hero",
+      "--bb-font-mono",
+      "--bb-font-poster",
+      "--bb-font-secondary",
+      "--bb-font-subhead",
+      "--bb-font-text",
+      "--bb-font-wordmark",
+      "--bb-info",
+      "--bb-ink",
+      "--bb-lime",
+      "--bb-magenta",
+      "--bb-neutral",
+      "--bb-on-dark-1",
+      "--bb-on-dark-2",
+      "--bb-on-dark-3",
+      "--bb-paper",
+      "--bb-pop",
+      "--bb-primary",
+      "--bb-radius-lg",
+      "--bb-radius-md",
+      "--bb-radius-pill",
+      "--bb-radius-sm",
+      "--bb-radius-xl",
+      "--bb-radius-xs",
+      "--bb-rule",
+      "--bb-rule-strong",
+      "--bb-s-1",
+      "--bb-s-10",
+      "--bb-s-2",
+      "--bb-s-3",
+      "--bb-s-4",
+      "--bb-s-5",
+      "--bb-s-6",
+      "--bb-s-7",
+      "--bb-s-8",
+      "--bb-s-9",
+      "--bb-shadow-1",
+      "--bb-shadow-2",
+      "--bb-shadow-3",
+      "--bb-stone",
+      "--bb-success",
+      "--bb-warn",
+      "--u",
+      "--wm-accent",
+      "--wm-ink"
+    ],
+    "tokenKinds": {
+      "--bb-ink": "color",
+      "--bb-lime": "color",
+      "--bb-magenta": "color",
+      "--bb-paper": "color",
+      "--bb-stone": "color",
+      "--bb-primary": "color",
+      "--bb-accent": "color",
+      "--bb-pop": "color",
+      "--bb-bg": "color",
+      "--bb-neutral": "color",
+      "--bb-fg-1": "color",
+      "--bb-fg-2": "color",
+      "--bb-fg-3": "color",
+      "--bb-fg-4": "color",
+      "--bb-on-dark-1": "color",
+      "--bb-on-dark-2": "color",
+      "--bb-on-dark-3": "color",
+      "--bb-rule": "color",
+      "--bb-rule-strong": "color",
+      "--bb-success": "color",
+      "--bb-warn": "color",
+      "--bb-error": "color",
+      "--bb-info": "color",
+      "--bb-radius-xs": "radius",
+      "--bb-radius-sm": "radius",
+      "--bb-radius-md": "radius",
+      "--bb-radius-lg": "radius",
+      "--bb-radius-xl": "radius",
+      "--bb-radius-pill": "radius",
+      "--bb-s-1": "spacing",
+      "--bb-s-2": "spacing",
+      "--bb-s-3": "spacing",
+      "--bb-s-4": "spacing",
+      "--bb-s-5": "spacing",
+      "--bb-s-6": "spacing",
+      "--bb-s-7": "spacing",
+      "--bb-s-8": "spacing",
+      "--bb-s-9": "spacing",
+      "--bb-s-10": "spacing",
+      "--bb-shadow-1": "shadow",
+      "--bb-shadow-2": "shadow",
+      "--bb-shadow-3": "shadow",
+      "--bb-ease-out": "other",
+      "--bb-ease-in-out": "other",
+      "--bb-dur-fast": "other",
+      "--bb-dur-base": "other",
+      "--bb-dur-slow": "other",
+      "--bb-font-wordmark": "font",
+      "--bb-font-hero": "font",
+      "--bb-font-subhead": "font",
+      "--bb-font-body": "font",
+      "--bb-font-text": "font",
+      "--bb-font-secondary": "font",
+      "--bb-font-poster": "font",
+      "--bb-font-mono": "font",
+      "--bb-font-display": "font",
+      "--bb-font-display-hebrew": "font",
+      "--bb-font-display-latin": "font",
+      "--bb-font-hebrew": "font",
+      "--u": "other",
+      "--wm-ink": "color",
+      "--wm-accent": "color"
+    },
+    "fontFamilies": [
+      "Archivo Black",
+      "JetBrains Mono",
+      "Noto Sans Hebrew",
+      "Polin",
+      "TelAviv Brutalist",
+      "TelAviv Eclectic Arabic",
+      "TelAviv Eclectic Arabic No2",
+      "TelAviv Eclectic Hebrew",
+      "TelAviv Eclectic Hebrew No2",
+      "TelAviv Eclectic Latin",
+      "TelAviv Eclectic Latin No2",
+      "TelAviv Modernist"
+    ]
+  }
+}

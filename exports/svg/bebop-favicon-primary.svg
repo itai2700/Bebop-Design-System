@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Bebop icon">
+  
+  <rect width="512" height="512" rx="96" fill="#0A0E10"></rect>
+  <text class="b" x="256" y="380" text-anchor="middle" fill="#F2F0E8">B</text>
+  <circle cx="408" cy="386" r="30" fill="#E0FF4F"></circle>
+</svg>

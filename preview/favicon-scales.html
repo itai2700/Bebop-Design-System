@@ -1,0 +1,31 @@
+<!-- @dsCard group="Brand" -->
+<!doctype html>
+<html><head><meta charset="utf-8"/>
+<title>Favicon scales</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600&display=swap" rel="stylesheet"/>
+<style>
+  body { margin: 0; padding: 24px; background: #fff; font-family: "Archivo", sans-serif; color: #0A0E10; }
+  h2 { font-family: "Archivo Black", sans-serif; font-weight: 400; font-size: 14px; letter-spacing: -0.015em; margin: 0 0 18px; }
+  .row { display: flex; align-items: flex-end; gap: 28px; flex-wrap: wrap; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .label { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(0,0,0,0.5); font-weight: 600; }
+  .fav { background: #0A0E10; color: #F2F0E8; font-family: "Archivo Black", sans-serif; font-weight: 400; letter-spacing: -1.5px; line-height: 1; display: flex; align-items: center; justify-content: center; position: relative; }
+  .fav .dot { position: absolute; border-radius: 50%; background: #E0FF4F; }
+  .s16 { width: 16px; height: 16px; border-radius: 3px; font-size: 13px; } .s16 .dot { width: 2.5px; height: 2.5px; right: 1.5px; bottom: 2px; }
+  .s24 { width: 24px; height: 24px; border-radius: 4px; font-size: 19px; } .s24 .dot { width: 3.5px; height: 3.5px; right: 2px; bottom: 3px; }
+  .s32 { width: 32px; height: 32px; border-radius: 6px; font-size: 25px; } .s32 .dot { width: 5px; height: 5px; right: 3px; bottom: 4px; }
+  .s48 { width: 48px; height: 48px; border-radius: 9px; font-size: 38px; } .s48 .dot { width: 7px; height: 7px; right: 4px; bottom: 5px; }
+  .s64 { width: 64px; height: 64px; border-radius: 11px; font-size: 51px; } .s64 .dot { width: 9px; height: 9px; right: 5px; bottom: 7px; }
+  .s96 { width: 96px; height: 96px; border-radius: 16px; font-size: 76px; } .s96 .dot { width: 13px; height: 13px; right: 8px; bottom: 10px; }
+</style></head>
+<body>
+  <h2>Favicon — readable from 16 to 96 px</h2>
+  <div class="row">
+    <div class="item"><span class="fav s16">B<span class="dot"></span></span><span class="label">16</span></div>
+    <div class="item"><span class="fav s24">B<span class="dot"></span></span><span class="label">24</span></div>
+    <div class="item"><span class="fav s32">B<span class="dot"></span></span><span class="label">32</span></div>
+    <div class="item"><span class="fav s48">B<span class="dot"></span></span><span class="label">48</span></div>
+    <div class="item"><span class="fav s64">B<span class="dot"></span></span><span class="label">64</span></div>
+    <div class="item"><span class="fav s96">B<span class="dot"></span></span><span class="label">96</span></div>
+  </div>
+</body></html>
