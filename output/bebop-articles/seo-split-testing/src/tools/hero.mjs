@@ -12,7 +12,7 @@ const author=s.author?`<div class="author">${s.author.image?`<img class="avatar"
 const html=`<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>
 ${fontCss()}
 html,body{margin:0;width:${W}px;height:${H}px;background:${bg};color:${fg};font-family:"Polin";overflow:hidden}
-.txt{position:absolute;right:${M}px;top:${M-40}px;width:${innerW}px;height:${innerH+40}px;display:flex;flex-direction:column;justify-content:${s.author?'flex-start':'center'};padding-top:${s.author?40:0}px;gap:28px;box-sizing:border-box}
+.txt{position:absolute;right:${M}px;top:${M-40-(s.shiftUp||0)}px;width:${innerW}px;height:${innerH+40}px;display:flex;flex-direction:column;justify-content:${s.author?'flex-start':'center'};padding-top:${s.author?40:0}px;gap:28px;box-sizing:border-box}
 .hook{font-weight:900;font-size:${words>5?150:190}px;line-height:1.08;letter-spacing:-0.02em;color:${fg};max-width:${innerW}px}
 .eyebrow{font-weight:600;font-size:56px;letter-spacing:0.08em;color:${accent};margin-bottom:8px}
 .author{position:absolute;right:${M}px;bottom:${M}px;display:flex;align-items:center;gap:28px;font-size:52px;font-weight:600}
