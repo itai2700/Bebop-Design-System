@@ -1,7 +1,7 @@
 {
  "title": "בדיקות A/B ל-SEO ב-2027, איך מוכיחים ששינוי באמת עבד",
  "slug": "seo-split-testing",
- "status": "draft",
+ "status": "publish",
  "category": "guides (17)",
  "pillar_tax": "seo (36)",
  "topic_tax": "seo (25)",
@@ -15,23 +15,29 @@
  "hero": {
   "file": "bebop-seo-split-testing-hero.webp",
   "alt": "כרטיס כותרת של המאמר, בדיקות A/B ל-SEO, איך מוכיחים ששינוי עבד, מאת איתי ביגאווי",
-  "title": "בדיקות A/B ל-SEO, איך מוכיחים ששינוי עבד"
+  "title": "בדיקות A/B ל-SEO, איך מוכיחים ששינוי עבד",
+  "id": 2681
  },
  "og": {
-  "file": "bebop-seo-split-testing-og.png"
+  "file": "bebop-seo-split-testing-og.png",
+  "id": 2682
  },
  "body": {
   "1": {
-   "file": "bebop-seo-split-testing-body-1.webp"
+   "file": "bebop-seo-split-testing-body-1.webp",
+   "id": 2683
   },
   "2": {
-   "file": "bebop-seo-split-testing-body-2.webp"
+   "file": "bebop-seo-split-testing-body-2.webp",
+   "id": 2684
   },
   "3": {
-   "file": "bebop-seo-split-testing-body-3.webp"
+   "file": "bebop-seo-split-testing-body-3.webp",
+   "id": 2685
   },
   "4": {
-   "file": "bebop-seo-split-testing-body-4.webp"
+   "file": "bebop-seo-split-testing-body-4.webp",
+   "id": 2686
   }
  },
  "faq": [
@@ -48,5 +54,8 @@
    "a": "רושמים אותה ביומן הבדיקות כפי שהיא, ולא מציגים אותה כניצחון. תוצאה כזאת לא אומרת שהשינוי חסר ערך, רק שהבדיקה לא הצליחה להבחין בהשפעה. מה עושים במקרה כזה מחליטים מראש בכלל ההחלטה, למשל לא להרחיב או להריץ שוב על קבוצת עמודים גדולה יותר."
   }
  ],
- "rank_math_description": "גרף של לפני ואחרי לא מוכיח תוצאות SEO. כך מריצים בדיקת ספליט, קוראים את המספרים ומציגים להנהלה תוצאה שאפשר לסמוך עליה."
+ "rank_math_description": "גרף של לפני ואחרי לא מוכיח תוצאות SEO. כך מריצים בדיקת ספליט, קוראים את המספרים ומציגים להנהלה תוצאה שאפשר לסמוך עליה.",
+ "post_id": 2687,
+ "url": "https://bebop.co.il/knowledge/guides/seo-split-testing",
+ "published": "2026-11-10"
 }
